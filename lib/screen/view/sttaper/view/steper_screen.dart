@@ -12,36 +12,11 @@ class screen extends StatefulWidget {
 
 class _screenState extends State<screen> {
   home_provider? h1;
-  GlobalKey<ScaffoldState> _key = GlobalKey();
-  TextEditingController txtName = TextEditingController();
-  TextEditingController txtPhone = TextEditingController();
-  TextEditingController txtEmail = TextEditingController();
-  TextEditingController txtDob = TextEditingController();
-  TextEditingController txtGender = TextEditingController();
-  TextEditingController txtLocation = TextEditingController();
-  TextEditingController txtNationality = TextEditingController();
-  TextEditingController txtReligion = TextEditingController();
-  TextEditingController txtLanguage = TextEditingController();
-  TextEditingController txtBiography = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     h1 = Provider.of<home_provider>(context);
     return SafeArea(
       child: Scaffold(
-        key: _key,
-        // appBar: NewGradientAppBar(
-        //   title: Text('Edit Your Profile'),
-        //   leading: Icon(Icons.arrow_back),
-        //   gradient: LinearGradient(
-        //     colors: [
-        //       Colors.blue,
-        //       Colors.lightBlueAccent,
-        //       Colors.greenAccent,
-        //       Colors.green.shade300
-        //     ],
-        //   ),
-        // ),
         body: Stepper(
           steps: [
             Step(
@@ -55,8 +30,7 @@ class _screenState extends State<screen> {
                   SizedBox(
                     height: 5,
                   ),
-                  TextFormField(
-                    controller: txtName,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5)),
@@ -82,8 +56,7 @@ class _screenState extends State<screen> {
                   SizedBox(
                     height: 5,
                   ),
-                  TextFormField(
-                    controller: txtName,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5)),
@@ -109,8 +82,7 @@ class _screenState extends State<screen> {
                   SizedBox(
                     height: 5,
                   ),
-                  TextFormField(
-                    controller: txtPhone,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5)),
@@ -135,8 +107,7 @@ class _screenState extends State<screen> {
                   SizedBox(
                     height: 5,
                   ),
-                  TextFormField(
-                    controller: txtEmail,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5)),
@@ -162,8 +133,7 @@ class _screenState extends State<screen> {
                   SizedBox(
                     height: 5,
                   ),
-                  TextFormField(
-                    controller: txtEmail,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),),
@@ -176,8 +146,7 @@ class _screenState extends State<screen> {
                     ),
                   ),
                   SizedBox(height: 10,),
-                  TextFormField(
-                    controller: txtEmail,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),),
@@ -190,8 +159,7 @@ class _screenState extends State<screen> {
                     ),
                   ),
                   SizedBox(height: 10,),
-                  TextFormField(
-                    controller: txtEmail,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),),
@@ -217,8 +185,7 @@ class _screenState extends State<screen> {
                   SizedBox(
                     height: 5,
                   ),
-                  TextFormField(
-                    controller: txtGender,
+                  TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),),
