@@ -1,9 +1,40 @@
+import 'package:ad_classs1_otcaster/screen/view/products123/view/product_screen2.dart';
+import 'package:ad_classs1_otcaster/screen/view/products123/view/product_screen3.dart';
 import 'package:ad_classs1_otcaster/screen/view/products123/view/prouct_screen.dart';
 import 'package:flutter/cupertino.dart';
 
 class ProductProvider extends ChangeNotifier {
-  List name = ["iwatch", "Raddo","Airpods","Bag","Sport Boot","Gaming PC","Gaming Headphone","i Phone 13 Pro Max","Msi F1 Sirseies","T-shurt"];
-  List price = ["5000", "10000","1500","500","1100","175000","5000","64999","399999","2299"];
+  DateTime del = DateTime(2023, 14, 3, 12, 52);
+
+  void changedate(DateTime news)
+  {
+    del = news;
+    notifyListeners();
+  }
+  List name = [
+    "iwatch",
+    "Raddo",
+    "Airpods",
+    "Bag",
+    "Sport Boot",
+    "Gaming PC",
+    "Gaming Headphone",
+    "i Phone 13 Pro Max",
+    "Msi F1 Sirseies",
+    "T-shurt"
+  ];
+  List price = [
+    "5000",
+    "10000",
+    "1500",
+    "500",
+    "1100",
+    "175000",
+    "5000",
+    "64999",
+    "399999",
+    "2299"
+  ];
   List image = [
     "assets/images/apple.png",
     "assets/images/rado.png",
@@ -16,14 +47,36 @@ class ProductProvider extends ChangeNotifier {
     "assets/images/msi.png",
     "assets/images/t-shirt.png",
   ];
+  List name1 = [
+    "BUSH!",
+    "FISHING",
+    "NIKE",
+    "NIKE_X!",
+    "T-shurt"
+  ];
+  List img = [
+    "assets/images/t_2.png",
+    "assets/images/t_3.png",
+    "assets/images/t_4.jpg",
+    "assets/images/t_5.jpg",
+    "assets/images/t-shirt.png"
+  ];
+  List price1 = [
+    "5000",
+    "10000",
+    "1500",
+    "500",
+    "1100",
+  ];
   List Screen = [
     ProductScreeen(),
-    ProductScreeen(),
-    ProductScreeen(),
+    ProductScreen2(),
+    ProductScreen3(),
   ];
-  int i=0;
 
-  void changePage(int value){
+  int i = 0;
+
+  void changePage(int value) {
     i = value;
     notifyListeners();
   }

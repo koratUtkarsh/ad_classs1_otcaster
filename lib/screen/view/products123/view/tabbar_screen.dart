@@ -37,11 +37,11 @@ class _TabNavigationState extends State<TabNavigation> {
                       label: "home",
                     ),
                     BottomNavigationBarItem(
-                      icon: Icon(CupertinoIcons.home),
+                      icon: Icon(CupertinoIcons.search),
                       label: "home"
                     ),
                     BottomNavigationBarItem(
-                      icon: Icon(CupertinoIcons.home),
+                      icon: Icon(CupertinoIcons.cart),
                         label: "home"
                     ),
                   ],
